@@ -1,0 +1,11 @@
+.up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 20px;
+}
+li a {
+  cursor: pointer;
+  background-color: black !important;
+  color: white !important;
+}
