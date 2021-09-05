@@ -9,3 +9,18 @@ li a {
   background-color: black !important;
   color: white !important;
 }
+
+.form {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.cardBody {
+  flex: 1 1 auto;
+  padding-top: 1rem;
+  padding-left: 1rem; 
+}
+
+.card {
+  overflow-x: auto !important;
+}
