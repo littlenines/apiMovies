@@ -13,15 +13,16 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand">Movies</a>
-            <form class="d-flex form">
-                <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+            <a class="navbar-brand" href="/">Movies</a>
+            <form class="d-flex" action="/search" method="post">
+                <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search" name="search">
+                <button class="btn btn-outline-success" type="submit" >Search</button>
             </form>
         </div>
     </nav>
     {{{body}}}
-    <script src="/js/app.js"></script>
+
+    {{!-- <script src="/js/app.js"></script> --}}
     <script src="/js/bootstrap.min.js"></script>
 </body>
 

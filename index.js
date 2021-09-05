@@ -1,6 +1,8 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
+require('dotenv').config();
+
 
 const app = express();
 
@@ -10,6 +12,7 @@ app.use(bodyParser.json());
 
 // Static files
 app.use(express.static('public'));
+
 
 // Template engine
 app.engine('hbs', exphbs({ extname: '.hbs' }));

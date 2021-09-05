@@ -1,15 +1,20 @@
 <div class="container mt-5">
-    <div class="row"></div>
-
-    <nav class="mt-4">
-        <ul class="pagination justify-content-center">
-            <li class="page-item">
-                <a class="page-link paging">
-                    <span aria-hidden="true">Show more...</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <div class="row">
+        {{#each appl}}
+        <div class="col mt-2">
+            <div class="card" style="width: 18rem; height: 501px;">
+                <img src="https://image.tmdb.org/t/p/w1280{{poster_path}}" class="card-img-top" alt="{{title}}">
+                <div class="cardBody">
+                    <h5 class="card-title">{{title}}</h5>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        <form class="my-3 form" action="/" method="post">
+            <button type="submit" class="btn btn-dark btn-lg" name="btn1" value="btn1">Prev</button>
+            <button type="submit" class="btn btn-dark btn-lg" name="btn1" value="btn2">Next</button>
+    </form>
+    </div>
 
     <a href="#" type="button" class="btn btn-dark up">Top</a>
 
