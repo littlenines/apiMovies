@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
+const config = require('../../config');
 
-const url = process.env.api;
+const url = config.host;
 
 router.get('/', (req, res) => {
     function showMovies(url, page = 1) {
@@ -21,11 +22,10 @@ router.get('/', (req, res) => {
 
 router.post('/search', (req, res) => {
     const { search } = req.body;
-    const SEARCHAPI = process.env.searchapi;
 
     if (search) {
 
-        axios.get(SEARCHAPI + search)
+        axios.get(config.searchApi + search)
             .then(response => {
                 res.render('home', { appl: response.data.results });
             }, error => {
