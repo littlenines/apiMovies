@@ -1,4 +1,5 @@
 # apiMovies
 NodeJS , Express ,Bootstrap, Vanilla JS and API <br> <br>
+This project was mostly used to learn how to work with api <br <br>
 
-![](https://github.com/littlenines/apiMovies/blob/31328792d0f9d30e448eeefb63aa46417106d84c/movies.gif)
+![](https://github.com/littlenines/apiMovies/blob/6b2dccfe8ea2911cae11bbbb63bc602fea6a5ee7/movies.gif)
