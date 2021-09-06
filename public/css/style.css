@@ -16,7 +16,7 @@ li a {
 }
 
 .cardBody {
-  flex: 1 1 auto;
+  flex: 1px 1px auto;
   padding-top: 1rem;
   padding-left: 1rem; 
 }
